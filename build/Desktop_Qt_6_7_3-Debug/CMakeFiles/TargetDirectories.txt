@@ -1,0 +1,9 @@
+/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/pcb_production_file_generator.dir
+/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/edit_cache.dir
+/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/rebuild_cache.dir
+/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/list_install_components.dir
+/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/install.dir
+/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/install/local.dir
+/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/install/strip.dir
+/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/pcb_production_file_generator_autogen_timestamp_deps.dir
+/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/pcb_production_file_generator_autogen.dir
