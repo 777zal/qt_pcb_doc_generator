@@ -13,7 +13,7 @@ int FileDialog::get_root_path(QString *path)
     }
     *path = QFileDialog::getOpenFileName(source_parent, tr("Open File"),
                                          "/home",
-                                         tr("PCB Fle (*.kicad_pcb)"));
+                                         tr("PCB File (*.kicad_pcb)"));
     return 1;
 }
 

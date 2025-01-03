@@ -2,8 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QFile>
 #include "filedialog.h"
 #include "terminal.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -29,8 +31,11 @@ private:
 private slots:
     void on_opendialog(void);
     void on_bomEnabled(void);
+
     void on_pickplaceEnabled(void);
+
     void on_gerberEnabled(void);
+
     void on_generateFile(void);
     void on_clearSelect(void);
 

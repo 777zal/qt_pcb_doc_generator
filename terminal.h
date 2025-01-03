@@ -29,12 +29,13 @@ private:
     bool bom_is_enabled = false;
     bool pickplace_is_enabled = false;
     bool gerber_is_enabled = false;
+
     void generate_gerber_file(QString folder_name);
-    void generate_bom_file(void);
-    void generate_pickplace_file(void);
-    void change_directory_to_target_directory(void);
-    void enter_target_folder(QString folder_name);
-    void create_target_folder_name(QString folder_name);
+    void generate_bom_file(QString folder_name);
+    void generate_pickplace_file(QString folder_name);
+
+    void set_working_directory(QString *path);
+    void create_folder(QString folder_name);
 
 
 signals:

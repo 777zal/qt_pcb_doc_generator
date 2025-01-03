@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include <QFile>
+#include <QDomDocument>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -8,6 +10,13 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     fileDialog  = new FileDialog(this);
     terminal    = new Terminal(this);
+
+    ui->pushButton_bom->setEnabled(false);
+    ui->pushButton_gbr->setEnabled(false);
+    ui->pushButton_pos->setEnabled(false);
+    ui->pushButton_gen->setEnabled(false);
+
+
 
     connect(ui->pushButton_open,&QPushButton::clicked, this, &MainWindow::on_opendialog);
     connect(ui->pushButton_bom, &QPushButton::clicked, this, &MainWindow::on_bomEnabled);
@@ -30,27 +39,32 @@ void MainWindow::on_opendialog(void){
     }
 
     target_path = terminal->get_current_workdir();
-    target_path.removeLast();
     terminal->set_source_path(&root_path);
     terminal->set_target_path(&target_path);
+    ui->pushButton_bom->setEnabled(true);
+    ui->pushButton_gbr->setEnabled(true);
+    ui->pushButton_pos->setEnabled(true);
 }
 
 void MainWindow::on_bomEnabled(void){
     ui->label_report->setText("BOM is set to generate");
     terminal->enable_BOM();
     ui->line_bom->setText(target_path+'/'+fileDialog->get_root_file_name(&root_path)+'/'+fileDialog->get_root_file_name(&root_path)+"_bom.csv");
+    ui->pushButton_gen->setEnabled(true);
 }
 
 void MainWindow::on_pickplaceEnabled(void){
     ui->label_report->setText("pickplace is set to generate");
     terminal->enable_pickplace();
     ui->line_pos->setText(target_path+'/'+fileDialog->get_root_file_name(&root_path)+'/'+fileDialog->get_root_file_name(&root_path)+"_pos.csv");
+    ui->pushButton_gen->setEnabled(true);
 }
 
 void MainWindow::on_gerberEnabled(void){
     ui->label_report->setText("gerber is set to generate");
     terminal->enable_gerber();
     ui->line_gerber->setText(target_path+'/'+fileDialog->get_root_file_name(&root_path)+'/'+"gbr");
+    ui->pushButton_gen->setEnabled(true);
 }
 
 void MainWindow::on_generateFile(void){
@@ -63,6 +77,14 @@ void MainWindow::on_clearSelect(void){
     terminal->disable_pickplace();
     terminal->disable_gerber();
 
+    ui->pushButton_bom->setEnabled(false);
+    ui->pushButton_gbr->setEnabled(false);
+    ui->pushButton_pos->setEnabled(false);
+    ui->pushButton_gen->setEnabled(false);
+
+    root_path.clear();
+    target_path.clear();
+    ui->line_open->setText("");
     ui->line_bom->setText("");
     ui->line_pos->setText("");
     ui->line_gerber->setText("");
