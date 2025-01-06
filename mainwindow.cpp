@@ -10,13 +10,13 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     fileDialog  = new FileDialog(this);
     terminal    = new Terminal(this);
+    place_handler = new PlaceTools();
+    gerber_handler = new GerberTools();
 
     ui->pushButton_bom->setEnabled(false);
     ui->pushButton_gbr->setEnabled(false);
     ui->pushButton_pos->setEnabled(false);
     ui->pushButton_gen->setEnabled(false);
-
-
 
     connect(ui->pushButton_open,&QPushButton::clicked, this, &MainWindow::on_opendialog);
     connect(ui->pushButton_bom, &QPushButton::clicked, this, &MainWindow::on_bomEnabled);
@@ -38,12 +38,25 @@ void MainWindow::on_opendialog(void){
         ui->line_open->setText(root_path);
     }
 
-    target_path = terminal->get_current_workdir();
-    terminal->set_source_path(&root_path);
-    terminal->set_target_path(&target_path);
-    ui->pushButton_bom->setEnabled(true);
-    ui->pushButton_gbr->setEnabled(true);
-    ui->pushButton_pos->setEnabled(true);
+    // target_path = terminal->get_current_workdir();
+    // terminal->set_source_path(&root_path);
+    // terminal->set_target_path(&target_path);
+
+    place_handler->set_pcb_source(&root_path);
+    if(!place_handler->generate_kicad_template_file()){
+        qDebug() << "Generate failed!";
+    }
+    if(!place_handler->generate_jlc_pcb_file()){
+        qDebug() << "Generate failed!";
+    }
+
+    gerber_handler->set_pcb_source(&root_path);
+    if(!gerber_handler->generate_kicad_template_file()){
+        qDebug() << "Generate failed";
+    }
+    // ui->pushButton_bom->setEnabled(true);
+    // ui->pushButton_gbr->setEnabled(true);
+    // ui->pushButton_pos->setEnabled(true);
 }
 
 void MainWindow::on_bomEnabled(void){

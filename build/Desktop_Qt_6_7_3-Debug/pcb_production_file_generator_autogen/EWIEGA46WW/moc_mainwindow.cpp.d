@@ -1,7 +1,11 @@
 /home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/pcb_production_file_generator_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/jal/Documents/qt_proj/pcb_production_file_generator/mainwindow.h \
   /home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/pcb_production_file_generator_autogen/moc_predefs.h \
   /home/jal/Documents/qt_proj/pcb_production_file_generator/filedialog.h \
+  /home/jal/Documents/qt_proj/pcb_production_file_generator/filemanager.h \
+  /home/jal/Documents/qt_proj/pcb_production_file_generator/gerbertools.h \
+  /home/jal/Documents/qt_proj/pcb_production_file_generator/placetools.h \
   /home/jal/Documents/qt_proj/pcb_production_file_generator/terminal.h \
+  /home/jal/Qt/6.7.3/gcc_64/include/QtCore/QDebug \
   /home/jal/Qt/6.7.3/gcc_64/include/QtCore/QFile \
   /home/jal/Qt/6.7.3/gcc_64/include/QtCore/QObject \
   /home/jal/Qt/6.7.3/gcc_64/include/QtCore/QProcess \

@@ -89,6 +89,38 @@ build CMakeFiles/pcb_production_file_generator.dir/terminal.cpp.o: CXX_COMPILER_
   OBJECT_DIR = CMakeFiles/pcb_production_file_generator.dir
   OBJECT_FILE_DIR = CMakeFiles/pcb_production_file_generator.dir
 
+build CMakeFiles/pcb_production_file_generator.dir/bomtools.cpp.o: CXX_COMPILER__pcb_production_file_generator_unscanned_Debug /home/jal/Documents/qt_proj/pcb_production_file_generator/bomtools.cpp || cmake_object_order_depends_target_pcb_production_file_generator
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB
+  DEP_FILE = CMakeFiles/pcb_production_file_generator.dir/bomtools.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/pcb_production_file_generator_autogen/include -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtCore -isystem /home/jal/Qt/6.7.3/gcc_64/include -isystem /home/jal/Qt/6.7.3/gcc_64/mkspecs/linux-g++ -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtWidgets -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtGui -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtXml
+  OBJECT_DIR = CMakeFiles/pcb_production_file_generator.dir
+  OBJECT_FILE_DIR = CMakeFiles/pcb_production_file_generator.dir
+
+build CMakeFiles/pcb_production_file_generator.dir/placetools.cpp.o: CXX_COMPILER__pcb_production_file_generator_unscanned_Debug /home/jal/Documents/qt_proj/pcb_production_file_generator/placetools.cpp || cmake_object_order_depends_target_pcb_production_file_generator
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB
+  DEP_FILE = CMakeFiles/pcb_production_file_generator.dir/placetools.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/pcb_production_file_generator_autogen/include -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtCore -isystem /home/jal/Qt/6.7.3/gcc_64/include -isystem /home/jal/Qt/6.7.3/gcc_64/mkspecs/linux-g++ -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtWidgets -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtGui -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtXml
+  OBJECT_DIR = CMakeFiles/pcb_production_file_generator.dir
+  OBJECT_FILE_DIR = CMakeFiles/pcb_production_file_generator.dir
+
+build CMakeFiles/pcb_production_file_generator.dir/gerbertools.cpp.o: CXX_COMPILER__pcb_production_file_generator_unscanned_Debug /home/jal/Documents/qt_proj/pcb_production_file_generator/gerbertools.cpp || cmake_object_order_depends_target_pcb_production_file_generator
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB
+  DEP_FILE = CMakeFiles/pcb_production_file_generator.dir/gerbertools.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/pcb_production_file_generator_autogen/include -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtCore -isystem /home/jal/Qt/6.7.3/gcc_64/include -isystem /home/jal/Qt/6.7.3/gcc_64/mkspecs/linux-g++ -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtWidgets -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtGui -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtXml
+  OBJECT_DIR = CMakeFiles/pcb_production_file_generator.dir
+  OBJECT_FILE_DIR = CMakeFiles/pcb_production_file_generator.dir
+
+build CMakeFiles/pcb_production_file_generator.dir/filemanager.cpp.o: CXX_COMPILER__pcb_production_file_generator_unscanned_Debug /home/jal/Documents/qt_proj/pcb_production_file_generator/filemanager.cpp || cmake_object_order_depends_target_pcb_production_file_generator
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB
+  DEP_FILE = CMakeFiles/pcb_production_file_generator.dir/filemanager.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/pcb_production_file_generator_autogen/include -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtCore -isystem /home/jal/Qt/6.7.3/gcc_64/include -isystem /home/jal/Qt/6.7.3/gcc_64/mkspecs/linux-g++ -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtWidgets -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtGui -isystem /home/jal/Qt/6.7.3/gcc_64/include/QtXml
+  OBJECT_DIR = CMakeFiles/pcb_production_file_generator.dir
+  OBJECT_FILE_DIR = CMakeFiles/pcb_production_file_generator.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target pcb_production_file_generator
@@ -97,7 +129,7 @@ build CMakeFiles/pcb_production_file_generator.dir/terminal.cpp.o: CXX_COMPILER_
 #############################################
 # Link the executable pcb_production_file_generator
 
-build pcb_production_file_generator: CXX_EXECUTABLE_LINKER__pcb_production_file_generator_Debug CMakeFiles/pcb_production_file_generator.dir/pcb_production_file_generator_autogen/mocs_compilation.cpp.o CMakeFiles/pcb_production_file_generator.dir/main.cpp.o CMakeFiles/pcb_production_file_generator.dir/mainwindow.cpp.o CMakeFiles/pcb_production_file_generator.dir/filedialog.cpp.o CMakeFiles/pcb_production_file_generator.dir/terminal.cpp.o | /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Widgets.so.6.7.3 /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Xml.so.6.7.3 /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Gui.so.6.7.3 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Core.so.6.7.3 || pcb_production_file_generator_autogen pcb_production_file_generator_autogen_timestamp_deps
+build pcb_production_file_generator: CXX_EXECUTABLE_LINKER__pcb_production_file_generator_Debug CMakeFiles/pcb_production_file_generator.dir/pcb_production_file_generator_autogen/mocs_compilation.cpp.o CMakeFiles/pcb_production_file_generator.dir/main.cpp.o CMakeFiles/pcb_production_file_generator.dir/mainwindow.cpp.o CMakeFiles/pcb_production_file_generator.dir/filedialog.cpp.o CMakeFiles/pcb_production_file_generator.dir/terminal.cpp.o CMakeFiles/pcb_production_file_generator.dir/bomtools.cpp.o CMakeFiles/pcb_production_file_generator.dir/placetools.cpp.o CMakeFiles/pcb_production_file_generator.dir/gerbertools.cpp.o CMakeFiles/pcb_production_file_generator.dir/filemanager.cpp.o | /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Widgets.so.6.7.3 /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Xml.so.6.7.3 /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Gui.so.6.7.3 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Core.so.6.7.3 || pcb_production_file_generator_autogen pcb_production_file_generator_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = -Wl,-rpath,/home/jal/Qt/6.7.3/gcc_64/lib:  /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Widgets.so.6.7.3  /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Xml.so.6.7.3  /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Gui.so.6.7.3  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so  /home/jal/Qt/6.7.3/gcc_64/lib/libQt6Core.so.6.7.3
   OBJECT_DIR = CMakeFiles/pcb_production_file_generator.dir

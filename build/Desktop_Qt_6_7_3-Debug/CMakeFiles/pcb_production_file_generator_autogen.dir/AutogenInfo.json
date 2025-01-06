@@ -437,15 +437,39 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/jal/Documents/qt_proj/pcb_production_file_generator/bomtools.h",
+			"MU",
+			"EWIEGA46WW/moc_bomtools.cpp",
+			null
+		],
+		[
 			"/home/jal/Documents/qt_proj/pcb_production_file_generator/filedialog.h",
 			"MU",
 			"EWIEGA46WW/moc_filedialog.cpp",
 			null
 		],
 		[
+			"/home/jal/Documents/qt_proj/pcb_production_file_generator/filemanager.h",
+			"MU",
+			"EWIEGA46WW/moc_filemanager.cpp",
+			null
+		],
+		[
+			"/home/jal/Documents/qt_proj/pcb_production_file_generator/gerbertools.h",
+			"MU",
+			"EWIEGA46WW/moc_gerbertools.cpp",
+			null
+		],
+		[
 			"/home/jal/Documents/qt_proj/pcb_production_file_generator/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/home/jal/Documents/qt_proj/pcb_production_file_generator/placetools.h",
+			"MU",
+			"EWIEGA46WW/moc_placetools.cpp",
 			null
 		],
 		[
@@ -516,7 +540,22 @@
 	"SOURCES" : 
 	[
 		[
+			"/home/jal/Documents/qt_proj/pcb_production_file_generator/bomtools.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/jal/Documents/qt_proj/pcb_production_file_generator/filedialog.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jal/Documents/qt_proj/pcb_production_file_generator/filemanager.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jal/Documents/qt_proj/pcb_production_file_generator/gerbertools.cpp",
 			"MU",
 			null
 		],
@@ -527,6 +566,11 @@
 		],
 		[
 			"/home/jal/Documents/qt_proj/pcb_production_file_generator/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/jal/Documents/qt_proj/pcb_production_file_generator/placetools.cpp",
 			"MU",
 			null
 		],

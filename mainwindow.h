@@ -5,6 +5,8 @@
 #include <QFile>
 #include "filedialog.h"
 #include "terminal.h"
+#include "placetools.h"
+#include "gerbertools.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -27,6 +29,8 @@ private:
     QString root_path;
     QString target_path;
     Terminal *terminal;
+    PlaceTools *place_handler;
+    GerberTools *gerber_handler;
 
 private slots:
     void on_opendialog(void);

@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QProcess>
 
+
 class Terminal : public QObject
 {
     Q_OBJECT

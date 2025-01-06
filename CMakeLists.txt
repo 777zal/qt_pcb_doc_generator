@@ -26,6 +26,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         filedialog.h filedialog.cpp
         terminal.h terminal.cpp
+        bomtools.h bomtools.cpp
+        placetools.h placetools.cpp
+        gerbertools.h gerbertools.cpp
+        filemanager.h filemanager.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
