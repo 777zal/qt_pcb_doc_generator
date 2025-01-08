@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_pcb_production_file_generator_FILE /home/jal/Documents/qt_proj/pcb_production_file_generator/build/Desktop_Qt_6_7_3-Debug/pcb_production_file_generator)
-set(__QT_DEPLOY_TARGET_pcb_production_file_generator_TYPE EXECUTABLE)

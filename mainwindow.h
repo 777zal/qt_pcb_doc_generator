@@ -7,6 +7,7 @@
 #include "terminal.h"
 #include "placetools.h"
 #include "gerbertools.h"
+#include "bomtools.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -29,9 +30,10 @@ private:
     QString root_path;
     QString target_path;
     Terminal *terminal;
-    PlaceTools *place_handler;
-    GerberTools *gerber_handler;
 
+    PlaceTools  *place_handler;
+    GerberTools *gerber_handler;
+    BomTools    *bom_handler;
 private slots:
     void on_opendialog(void);
     void on_bomEnabled(void);

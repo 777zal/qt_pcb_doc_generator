@@ -8,10 +8,11 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    fileDialog  = new FileDialog(this);
-    terminal    = new Terminal(this);
-    place_handler = new PlaceTools();
-    gerber_handler = new GerberTools();
+    fileDialog      = new FileDialog(this);
+    terminal        = new Terminal(this);
+    place_handler   = new PlaceTools();
+    gerber_handler  = new GerberTools();
+    bom_handler     = new BomTools();
 
     ui->pushButton_bom->setEnabled(false);
     ui->pushButton_gbr->setEnabled(false);
@@ -53,6 +54,14 @@ void MainWindow::on_opendialog(void){
     gerber_handler->set_pcb_source(&root_path);
     if(!gerber_handler->generate_kicad_template_file()){
         qDebug() << "Generate failed";
+    }
+
+    bom_handler->set_pcb_source(&root_path);
+    if(!bom_handler->generate_kicad_template_file()){
+        qDebug() << "Generate Failed";
+    }
+    if(!bom_handler->generate_jlc_pcb_file()){
+        qDebug() << "Generate Failed";
     }
     // ui->pushButton_bom->setEnabled(true);
     // ui->pushButton_gbr->setEnabled(true);
