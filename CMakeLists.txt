@@ -25,7 +25,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         filedialog.h filedialog.cpp
-        terminal.h terminal.cpp
         bomtools.h bomtools.cpp
         placetools.h placetools.cpp
         gerbertools.h gerbertools.cpp

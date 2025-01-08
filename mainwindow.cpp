@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     fileDialog      = new FileDialog(this);
-    terminal        = new Terminal(this);
+    // terminal        = new Terminal(this);
     place_handler   = new PlaceTools();
     gerber_handler  = new GerberTools();
     bom_handler     = new BomTools();
@@ -70,34 +70,34 @@ void MainWindow::on_opendialog(void){
 
 void MainWindow::on_bomEnabled(void){
     ui->label_report->setText("BOM is set to generate");
-    terminal->enable_BOM();
+    // terminal->enable_BOM();
     ui->line_bom->setText(target_path+'/'+fileDialog->get_root_file_name(&root_path)+'/'+fileDialog->get_root_file_name(&root_path)+"_bom.csv");
     ui->pushButton_gen->setEnabled(true);
 }
 
 void MainWindow::on_pickplaceEnabled(void){
     ui->label_report->setText("pickplace is set to generate");
-    terminal->enable_pickplace();
+    // terminal->enable_pickplace();
     ui->line_pos->setText(target_path+'/'+fileDialog->get_root_file_name(&root_path)+'/'+fileDialog->get_root_file_name(&root_path)+"_pos.csv");
     ui->pushButton_gen->setEnabled(true);
 }
 
 void MainWindow::on_gerberEnabled(void){
     ui->label_report->setText("gerber is set to generate");
-    terminal->enable_gerber();
+    // terminal->enable_gerber();
     ui->line_gerber->setText(target_path+'/'+fileDialog->get_root_file_name(&root_path)+'/'+"gbr");
     ui->pushButton_gen->setEnabled(true);
 }
 
 void MainWindow::on_generateFile(void){
-    terminal->generate_documents(fileDialog->get_root_file_name(&root_path));
+    // terminal->generate_documents(fileDialog->get_root_file_name(&root_path));
 }
 
 void MainWindow::on_clearSelect(void){
     ui->label_report->setText("clear selection");
-    terminal->disable_BOM();
-    terminal->disable_pickplace();
-    terminal->disable_gerber();
+    // terminal->disable_BOM();
+    // terminal->disable_pickplace();
+    // terminal->disable_gerber();
 
     ui->pushButton_bom->setEnabled(false);
     ui->pushButton_gbr->setEnabled(false);

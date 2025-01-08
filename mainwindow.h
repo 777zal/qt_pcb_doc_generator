@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QFile>
 #include "filedialog.h"
-#include "terminal.h"
+// #include "terminal.h"
 #include "placetools.h"
 #include "gerbertools.h"
 #include "bomtools.h"
@@ -29,7 +29,7 @@ private:
     FileDialog *fileDialog;
     QString root_path;
     QString target_path;
-    Terminal *terminal;
+    // Terminal *terminal;
 
     PlaceTools  *place_handler;
     GerberTools *gerber_handler;
