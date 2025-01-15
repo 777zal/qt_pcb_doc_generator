@@ -279,12 +279,14 @@ QByteArray BomTools::_compose_as_jlc_pcb_format(QStringList components, \
     QString temp_comment;
     QString temp_designator;
     QString temp_footprint;
+    int number_of_component=0;
 
     /* compose first row */
     data.append("Comment,");
     data.append("Designator,");
     data.append("Footprint,");
-    data.append("Part\n");
+    data.append("Part,");
+    data.append("Amount\n");
     /*********************/
 
     auto tag1 = _append_scores_to_list(&values);
@@ -296,11 +298,13 @@ QByteArray BomTools::_compose_as_jlc_pcb_format(QStringList components, \
         temp_comment.clear();
         temp_designator.clear();
         temp_footprint.clear();
+        number_of_component = 0;
         for(int j=0; j<components.length();j++){
             if(tag3.at(j).toInt() == i){
                 temp_comment = values.at(j);
                 temp_designator.append(components.at(j)+',');
                 temp_footprint = footprints.at(j);
+                number_of_component = number_of_component + 1;
             }
         }
         /* compose each row */
@@ -308,7 +312,9 @@ QByteArray BomTools::_compose_as_jlc_pcb_format(QStringList components, \
         temp_designator.removeLast(); // this to remove last comma
         data.append('"'+temp_designator+'"'+',');
         data.append(temp_footprint+',');
-        data.append("TBD\n");
+        data.append("TBD,");
+        data.append(QString::number(number_of_component)+'\n');
+
         /********************/
     }
     return data.toLocal8Bit();
